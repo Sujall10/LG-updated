@@ -6,7 +6,7 @@ console.log('SCRIPT.JS LOADED - VERSION 3.0 - COMPLETE');
 // ===== Wait for DOM to be fully loaded =====
 document.addEventListener('DOMContentLoaded', function() {
     console.log('%c🌿 Loyal Greens - Sustainable Fashion', 'color: #d4af37; font-size: 20px; font-weight: bold;');
-    console.log('%cWebsite by Loyal Greens Team', 'color: #0a0a0a; font-size: 14px;');
+    console.log('%cWebsite by ZYNOS.IO', 'color: #0a0a0a; font-size: 14px;');
     
     // Initialize common functionality
     initializeNavbar();
