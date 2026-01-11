@@ -678,6 +678,8 @@ section {
 .gallery-item:hover {
     border-color: var(--gold);
     box-shadow: 0 10px 40px rgba(212, 175, 55, 0.2);
+    filter: grayscale(100%);
+    /* transform: scale(1.05); */
 }
 
 .gallery-item:hover img {
@@ -1044,4 +1046,25 @@ section {
     .footer-links {
         grid-template-columns: 1fr;
     }
+}
+
+
+.bg-cotton {
+    background-image: url("Organic.png");
+}
+
+.bg-formal {
+    background-image: url("Elegant Outfits for Men 2026 – Modern Styles from Casual to Formal Trends.jpeg");
+}
+
+.bg-outerwear {
+    background-image: url("3-image.jpg");
+}
+
+.bg-denim {
+    background-image: url("4-image.jpg");
+}
+
+.bg-ethical {
+    background-image: url("images/ethical-fashion.jpg");
 }

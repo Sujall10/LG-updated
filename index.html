@@ -18,6 +18,363 @@
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <!-- <style>
+        .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    position: relative;
+    height: 500px;
+    border-radius: 18px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    transition: transform 0.3s ease;
+}
+
+/* .service-card:hover {
+    transform: translateY(-8px);
+} */
+
+/* .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(212, 175, 55, 0.2);
+    border-color: var(--gold);
+    background: rgb(0, 0, 0);
+} */
+
+/* Dark overlay */
+/* .service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.87),
+        rgba(0, 0, 0, 0.23)
+    );
+    z-index: 1;
+} */
+
+/* Text content */
+.service-content {
+    position: relative;
+    z-index: 2;
+    padding: 24px;
+    color: #fff;
+}
+
+.service-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #f4c430; /* gold accent like your screenshot */
+}
+
+.service-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+
+.service-card {
+    position: relative;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+
+    /* IMPORTANT */
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover effect */
+.service-card:hover {
+    filter: grayscale(100%);
+    /* transform: translateY(-8px); */
+}
+.service-card,
+.service-card::before {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.3)
+    );
+    border-radius: inherit;
+}
+
+
+    </style> -->
+
+    <!-- <style>
+        .services {
+    padding: 100px 6%;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+}
+
+.heading-emphasis {
+    color: #f4c430;
+}
+
+/* GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.service-card {
+    position: relative;
+    height: 520px;
+    border-radius: 22px;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+    transition: transform 0.4s ease;
+}
+
+/* REMOVE ALL EDGE LINES */
+.service-card,
+.service-card::before {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.service-card:hover {
+    filter: grayscale(100%);
+    /* transform: translateY(-8px); */
+}
+
+/* OVERLAY */
+.service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.25)
+    );
+    z-index: 1;
+}
+
+/* CONTENT */
+.service-content {
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    z-index: 2;
+}
+
+.service-content h3 {
+    font-size: 1.6rem;
+    color: #f4c430;
+    margin-bottom: 12px;
+}
+
+.service-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* HOVER EFFECTS */
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+/* grayscale ONLY image */
+.service-card:hover {
+    filter: grayscale(100%);
+}
+
+/* ---------------- BACKGROUND IMAGES ---------------- */
+/* .bg-cotton {
+    background-image: url("images/organic-cotton.jpg");
+}
+
+.bg-formal {
+    background-image: url("images/eco-formals.jpg");
+}
+
+.bg-outerwear {
+    background-image: url("images/recycled-outerwear.jpg");
+}
+
+.bg-denim {
+    background-image: url("images/sustainable-denim.jpg");
+}
+
+.bg-ethical {
+    background-image: url("images/ethical-fashion.jpg");
+} */
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+    .service-card {
+        height: 420px;
+    }
+
+    .section-heading {
+        font-size: 2.2rem;
+    }
+}
+    </style> -->
+
+    <style>
+        /* ---------------- SERVICES ---------------- */
+.services {
+    padding: 120px 6%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 70px;
+}
+
+.section-title span {
+    color: #f4c430;
+}
+
+/* GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+/* CARD */
+.service-card {
+    position: relative;
+    height: 520px;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.service-card,
+.service-card::before {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* IMAGE LAYER (IMPORTANT) */
+.service-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+/* OVERLAY */
+.service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.25)
+    );
+    z-index: 1;
+}
+
+/* CONTENT */
+.service-content {
+    position: absolute;
+    bottom: 0;
+    padding: 32px;
+    z-index: 2;
+}
+
+.service-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #f4c430;
+}
+
+.service-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* 🔥 HOVER EFFECT (WORKING) */
+.service-card:hover .service-bg {
+    filter: grayscale(100%);
+    transform: scale(1.05);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ---------------- BACKGROUND IMAGES ---------------- */
+/* .bg-cotton {
+    background-image: url("images/organic-cotton.jpg");
+}
+
+.bg-formal {
+    background-image: url("images/eco-formals.jpg");
+}
+
+.bg-outerwear {
+    background-image: url("images/recycled-outerwear.jpg");
+}
+
+.bg-denim {
+    background-image: url("images/sustainable-denim.jpg");
+}
+
+.bg-ethical {
+    background-image: url("images/ethical-fashion.jpg");
+} */
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .service-card {
+        height: 420px;
+    }
+}
+</style>
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -114,32 +471,40 @@
             sustainable apparel
         </h2>
         <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">👕</div>
+     <div class="service-card">
+            <div class="service-bg bg-cotton"></div>
+            <div class="service-content">
                 <h3>Organic Cotton Wear</h3>
                 <p>Premium organic cotton clothing designed for comfort and sustainability.</p>
             </div>
-            <div class="service-card">
-                <div class="service-icon">👔</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-bg bg-formal"></div>
+            <div class="service-content">
                 <h3>Eco-Friendly Formals</h3>
-                <p>Professional attire crafted from sustainable, ethically sourced materials.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🧥</div>
-                <h3>Recycled Outerwear</h3>
-                <p>Stylish jackets and coats made from recycled and sustainable fabrics.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">👖</div>
-                <h3>Sustainable Denim</h3>
-                <p>Classic denim pieces produced with minimal environmental impact.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">👗</div>
-                <h3>Ethical Fashion Line</h3>
-                <p>Contemporary designs that honor both style and ethical production standards.</p>
+                <p>Professional attire crafted from sustainable materials.</p>
             </div>
         </div>
+
+        <div class="service-card">
+            <div class="service-bg bg-outerwear"></div>
+            <div class="service-content">
+                <h3>Recycled Outerwear</h3>
+                <p>Stylish jackets made from recycled fabrics.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-bg bg-denim"></div>
+            <div class="service-content">
+                <h3>Sustainable Denim</h3>
+                <p>Classic denim with minimal environmental impact.</p>
+            </div>
+        </div>  
+    
+</div>
+
     </section>
 
     <!-- Testimonials Section -->
@@ -213,22 +578,16 @@
     <section class="gallery" id="gallery">
         <div class="gallery-grid">
             <div class="gallery-item tall">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='900' viewBox='0 0 600 900'%3E%3Crect fill='%23a8d08d' width='600' height='900'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='80' fill='white'%3E🌿%3C/text%3E%3C/svg%3E" alt="Gallery Image">
+                <img src="Galleyr-3.jpg" alt="Gallery Image">
             </div>
             <div class="gallery-item wide">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='600' viewBox='0 0 900 600'%3E%3Crect fill='%236b9b37' width='900' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='80' fill='white'%3E👕%3C/text%3E%3C/svg%3E" alt="Gallery Image">
+                <img src="Gallery-1.webp" alt="Gallery Image">
             </div>
             <div class="gallery-item">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'%3E%3Crect fill='%232d5016' width='600' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='80' fill='white'%3E🧥%3C/text%3E%3C/svg%3E" alt="Gallery Image">
-            </div>
-            <div class="gallery-item wide">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='600' viewBox='0 0 900 600'%3E%3Crect fill='%23a8d08d' width='900' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='80' fill='white'%3E♻️%3C/text%3E%3C/svg%3E" alt="Gallery Image">
+                <img src="Gallery-2.webp" alt="Gallery Image">
             </div>
             <div class="gallery-item">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'%3E%3Crect fill='%236b9b37' width='600' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='80' fill='white'%3E👔%3C/text%3E%3C/svg%3E" alt="Gallery Image">
-            </div>
-            <div class="gallery-item tall">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='900' viewBox='0 0 600 900'%3E%3Crect fill='%232d5016' width='600' height='900'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='80' fill='white'%3E🌱%3C/text%3E%3C/svg%3E" alt="Gallery Image">
+                <img src="Gallery-4.jpg" width="100" height="100" alt="Gallery Image">
             </div>
         </div>
     </section>
